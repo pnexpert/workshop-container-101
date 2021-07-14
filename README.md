@@ -1,6 +1,3 @@
-[Windows 額外設定](#Windows 10 環境設置建議)  
-[Mac 額外設定](#Mac 環境設置建議)
-
 # 準備你的工作坊 Hands-on 環境
 本工作坊的 Hands-on 課程需要您準備可執行 Docker 服務的系統，您可以選用 Windows 10, Mac 或是 Linux Kernel 4.5 以上版本的各種發佈版本 (CentOS, Ubuntu, Fedora 或是 Debian)。
 
