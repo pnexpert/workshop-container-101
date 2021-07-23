@@ -1,3 +1,6 @@
+# 下載工作坊中使用的 Sample project
+您可以選擇直接下載這份 repo 成為一個 `.zip` 檔案到您的工作機內
+
 # 準備你的工作坊 Hands-on 環境
 本工作坊的 Hands-on 課程需要您準備可執行 Docker 服務的系統，您可以選用 Windows 10, Mac 或是 Linux Kernel 4.5 以上版本的各種發佈版本 (CentOS, Ubuntu, Fedora 或是 Debian)。
 
