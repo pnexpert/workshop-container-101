@@ -13,33 +13,24 @@
 
 @code {
     private int currentCount = 0;
-    private int normalCount = 0;
-    private int warningCount = 0;
-    private int errorCount = 0;
-    private int criticalCount = 0;
-
     private void IncrementInformation()
     {
         logger.LogInformation("Information message.");
-        normalCount++;
         currentCount++;
     }
     private void IncrementWarning()
     {
-        logger.LogWarning("Warning message..");
-        warningCount++;
+        logger.LogWarning("Warning message.");
         currentCount++;
     }
     private void IncrementError()
     {
-        logger.LogError("Error message..");
-        errorCount++;
+        logger.LogError("Error message.");
         currentCount++;
     }
     private void IncrementCritical()
     {
-        logger.LogCritical("Critical message..");
-        criticalCount++;
+        logger.LogCritical("Critical message.");
         currentCount++;
     }
 }
