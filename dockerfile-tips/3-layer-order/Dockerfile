@@ -1,4 +1,4 @@
-# docker build -t aspnet-demo:restore-first -f 3-layer-order/Dockerfile .
+# docker build -t aspnet-demo:restore-first -f dockerfile-tips/3-layer-order/Dockerfile ./dotnet-core-docker
 FROM mcr.microsoft.com/dotnet/sdk:5.0-alpine
 
 # copy csproj file first for restoring nuget package only

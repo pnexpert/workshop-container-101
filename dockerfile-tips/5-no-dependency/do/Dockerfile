@@ -1,4 +1,4 @@
-# docker build -t simple-worker:no-dependency-do -f 5-no-dependency/do/Dockerfile .
+# docker build -t simple-worker:no-dependency-do -f dockerfile-tips/5-no-dependency/do/Dockerfile ./dotnet-core-docker
 FROM mcr.microsoft.com/dotnet/sdk:5.0-alpine
 RUN apk update && \
     apk add curl

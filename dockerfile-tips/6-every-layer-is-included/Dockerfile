@@ -1,5 +1,5 @@
 # # execute this command same the same directory of this Dockerfile
-# docker build -t download-gcs -f Dockerfile .
+# docker build -t download-gcs -f dockerfile-tips/6-every-layer-is-included/Dockerfile ./dockerfile-tips/6-every-layer-is-included/
 FROM gcr.io/google.com/cloudsdktool/cloud-sdk:alpine
 
 WORKDIR /app

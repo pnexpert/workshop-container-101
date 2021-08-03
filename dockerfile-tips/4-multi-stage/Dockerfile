@@ -1,4 +1,4 @@
-# docker build -t aspnet-demo:multi-stage -f 4-multi-stage/Dockerfile .
+# docker build -t aspnet-demo:multi-stage -f dockerfile-tips/4-multi-stage/Dockerfile ./dotnet-core-docker
 FROM mcr.microsoft.com/dotnet/sdk:5.0-alpine AS build
 
 # copy csproj file first for restoring nuget package only

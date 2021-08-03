@@ -1,5 +1,5 @@
 # # run command in .\BlazorApp\ to generate complied files: dotnet run
-# docker build -t aspnet-demo:dockerignore -f 1-dockerignore/Dockerfile .
+# docker build -t aspnet-demo:dockerignore -f dockerfile-tips/1-dockerignore/Dockerfile ./dotnet-core-docker
 FROM mcr.microsoft.com/dotnet/sdk:5.0
 
 COPY BlazorApp /sources/BlazorApp
