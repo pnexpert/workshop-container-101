@@ -1,0 +1,25 @@
+@page "/health"
+@using Microsoft.Extensions.Logging;
+@inject ILogger<Counter> logger;
+
+<h1>Health Checker</h1>
+
+<p>Total reports: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="()=>HealthChecker(3600)">1 hour</button>
+<button class="btn btn-primary" @onclick="()=>HealthChecker(28800)">8 hours</button>
+<button class="btn btn-primary" @onclick="()=>HealthChecker(86400)">1 day</button>
+
+@code {
+    private int currentCount = 0;
+    private void HealthChecker(int target)
+    {
+        var i = 0;
+        while(i<target)
+        {
+            logger.LogInformation("Health OK!");
+            i++;
+        }
+        currentCount += i;
+    }
+}
