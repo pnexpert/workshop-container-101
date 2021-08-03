@@ -1,0 +1,13 @@
+upstream blazor {
+    server __YOUR_IP__:80;
+}
+
+server {
+    listen       80;
+    listen  [::]:80;
+    server_name  localhost;
+
+    location / {
+        proxy_pass http://blazor;
+    }
+}
